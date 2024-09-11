@@ -1,0 +1,26 @@
+function createNeuralNetwork() {
+    const svg = d3.select("#neural-network");
+    const width = svg.node().getBoundingClientRect().width;
+    const height = 300;
+
+    // Create a single moving circle
+    const circle = svg.append("circle")
+        .attr("r", 20)
+        .attr("fill", "blue");
+
+    function animate() {
+        circle
+            .transition()
+            .duration(2000)
+            .attr("cx", Math.random() * width)
+            .attr("cy", Math.random() * height)
+            .on("end", animate);  // Repeat the animation
+    }
+
+    animate();
+}
+
+// Call the function when the page loads
+window.addEventListener('load', () => {
+    createNeuralNetwork();
+});
