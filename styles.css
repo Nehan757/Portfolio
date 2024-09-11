@@ -109,12 +109,12 @@ p {
     text-overflow: ellipsis;
     font-size: 0.9em;
     margin-bottom: 1em;
-    line-height: 1.5; /* Add this to ensure consistent line height */
+    line-height: 1.5;
 }
 
 .info-line span {
     display: inline-block;
-    vertical-align: middle; /* Align all spans vertically */
+    vertical-align: middle;
 }
 
 .separator {
@@ -123,13 +123,8 @@ p {
     font-weight: bold;
     margin: 0 0.3em;
     display: inline-block;
-    transform: translateY(-1.9px); /* Move the separator slightly upward */
-    line-height: 1; /* Ensure the separator doesn't affect overall line height */
-}
-@media (max-width: 768px) {
-    .info-line {
-        font-size: 0.8em; /* Further reduce font size on smaller screens */
-    }
+    transform: translateY(-1.9px);
+    line-height: 1;
 }
 
 .education-item, .experience-item, .project-item {
@@ -207,13 +202,31 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     nav ul li {
-        margin: 0.5rem 0;
+        margin: 0.5rem;
+        flex-basis: 30%;
+    }
+
+    .info-line {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        white-space: normal;
+        font-size: 0.9em;
+    }
+
+    .info-line .institute {
+        display: block;
+        margin-top: 0.5em;
     }
 
     main {
