@@ -103,6 +103,35 @@ p {
     padding-left: 20px;
 }
 
+.info-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    line-height: 1.5; /* Add this to ensure consistent line height */
+}
+
+.info-line span {
+    display: inline-block;
+    vertical-align: middle; /* Align all spans vertically */
+}
+
+.separator {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 0.3em;
+    display: inline-block;
+    transform: translateY(-1.9px); /* Move the separator slightly upward */
+    line-height: 1; /* Ensure the separator doesn't affect overall line height */
+}
+@media (max-width: 768px) {
+    .info-line {
+        font-size: 0.8em; /* Further reduce font size on smaller screens */
+    }
+}
+
 .education-item, .experience-item, .project-item {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
