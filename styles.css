@@ -205,15 +205,16 @@ footer {
     header {
         padding: 0.5rem;
     }
-
     nav ul {
+        display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     nav ul li {
-        margin: 0.5rem;
-        flex-basis: 30%;
+        flex-basis: 33.33%;
+        text-align: center;
+        margin: 0.25rem 0;
     }
 
     .info-line {
