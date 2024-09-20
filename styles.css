@@ -4,7 +4,15 @@
     --background-color: #ffffff;
     --text-color: #333;
 }
+#hero h2 {
+    font-size: 2rem;
+    margin-bottom: -0.5rem;
+    color: var(--primary-color);
+}
 
+.info-line {
+    margin-top: 0.1rem; /* Add this if it doesn't exist, or reduce if it does */
+}
 html, body {
     height: 100%;
 }
