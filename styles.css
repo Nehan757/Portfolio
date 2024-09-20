@@ -230,6 +230,11 @@ footer {
     header {
         padding: 0.5rem;
     }
+
+    #hero {
+        text-align: center;
+    }
+
     nav ul {
         display: flex;
         flex-wrap: wrap;
